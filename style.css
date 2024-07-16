@@ -9,8 +9,8 @@
     font-family: "Roboto", sans-serif;;
 }
 body{
-    background-color: #ffff;
-    height: 300vh;
+    /* background-color: #422525; */
+    /* height: 300vh; */
 }
 ul {
     text-decoration: none;
@@ -21,15 +21,18 @@ ul {
     box-shadow: 2px;
 }
 #logo {
-    width: 130px;
-    height: 17px;
-    cursor: pointer;
+    width: 150px !important;
+    height: auto;
+    max-height: 100px;
+    vertical-align: middle;
 }
 
 .container {
     max-width: 1100px;
     margin-inline: auto;
     /* overflow: hidden; */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #nav{
     position: fixed;
@@ -42,13 +45,6 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* margin: 20px 25px; */
-    /* border: 2px solid black; */
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
-    /* position: sticky; */
-   
-    
 }
 
 
@@ -75,34 +71,28 @@ box-icon{
 .navlist:hover{
     color: #387ed1;
 }
-
 #main{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    padding-left: 12rem;
-    padding-right: 12rem;
+    justify-content: space-evenly;
     height: 80vh;
-    margin-top: 7rem;
-    margin-bottom: 2rem;
+    margin-top: 100px;
+}
+.big-img{
+    max-width: 700px;
+}
+.big-img img{
+    width: 100%;
 }
 .heading{
     font-size: 3rem;
-    font-weight: 500;
-    color: #424242;
+    font-weight: 400;
+    color:rgb(70, 69, 69)
 }
-#main img{
-    width: 100%;
-    max-height: 45vh;
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
-}
-#main p{
-    font-size: 1.25rem;
-    color: #424242;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+.sub-text{
+    font-size: 1.4rem;
+    color: rgb(75, 75, 75);
 }
 
 .dark-button{
@@ -120,9 +110,17 @@ box-icon{
 .dark-button:hover{
     background-color: #1b1b1b;
 }
+
 .box{
     width: 700px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    box-shadow: 3px 2px 5px gray;
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: #ffff;
+
 }
 #hidden-bar{
     display: flex;
@@ -131,7 +129,6 @@ box-icon{
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
 .upper-part{
     display: flex;
     flex-direction: column;
@@ -139,15 +136,14 @@ box-icon{
     gap: .5rem;
     align-items: center;
 }
-
 .bold-text{
     font-weight: 500;
+    transition: color .3s;
 }
 .light-text{
     font-size: .8rem;
     color: rgb(122, 121, 121);
 }
-
 .part-two{
     display: flex;
     width: 100%;
@@ -164,7 +160,7 @@ box-icon{
     padding: .4rem 0;
     cursor: pointer;
 }
-.part-two-content li,p:hover{
+.part-two-content li:hover{
     
     color: #387ed1;
 }
@@ -183,5 +179,83 @@ box-icon{
 .education-content{
     margin-top: 2rem;
     width: 100%;
+    transition: color .3s;
+    /* border: 2px solid black; */
+}
+.education-content:hover{
+    color: #387ed1;
+}
+.bold-text:hover{
+    color: #387ed1;
+}
+.education p:hover{
+    color: #387ed1;
 }
 
+.calculator{
+    margin-top: 100px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 425px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    background-color: #ffff;
+    /* filter: blur(10px); */
+    box-shadow: 2px 2px 10px gray;
+    margin-bottom: 20px;
+}
+.output{
+    border: 1px solid gray;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #ffff;
+    height: 25px;
+    font-weight: 500;
+    /* vertical-align: middle; */
+}
+.calculator h1{
+    color: #387ed1;
+}
+.calculator button{
+    width: 100%;
+    border: none;
+    background-color: #387ed1;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 3px;
+    box-shadow: 2px 2px 5px #387ed1;
+    transition: color 1s ease-in-out;
+    cursor: pointer;
+}
+.calculator button:hover{
+    background-color: #1b1b1b;
+}
+
+.calculator input{
+    width: 100%;
+    border: .5px solid gray;
+    height: 25px;
+}
+.calculator label{
+    font-weight: 600;
+}
+
+.calculator input:focus{
+    outline: none;
+    box-shadow: 2px 2px 10px grey;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: .8rem;
+}

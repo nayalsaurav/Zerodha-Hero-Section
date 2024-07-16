@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div id="nav">
@@ -17,18 +18,11 @@
                 <li class="navlist" >Products</li>
                 <li class="navlist" >Pricing</li>
                 <li class="navlist" >Support</li>
-                <box-icon name='menu'></box-icon>
+                <box-icon name='menu' id="menu"></box-icon>
             </ul>
         </div>
         </nav>
-    </div>
-    <div id="main" class="container">
-        <img src="asset/asset 7.png" alt="">
-        <div class="heading">Invest in everything</div>
-        <p>Online platform to invest in stocks, derivatives, mutual funds, and more</p>
-        <button class="dark-button">Sign up now</button>
-    </div>
-
+        
     <div class="box">
         <div id="hidden-bar">
             <div class="upper-part">
@@ -87,6 +81,40 @@
 
         </div>
     </div>
+    </div>
+    <div id="main" class="container">
+       <div class="big-img">
+        <img src="asset/asset 7.png" alt="">
+       </div>
+        <div style="text-align: center; margin-top : 30px; margin-bottom: 50px;">
+            <div class="heading">Invest in everything</div>
+        <p class="sub-text">Online platform to invest in stocks, derivatives, mutual funds, and more</p>
+        </div>
+        <button class="dark-button">Sign up now</button>
+    </div>
+    <div id="page-two">
+        <div class="calculator container">
+            <h1>Simple Interest Calculator</h1>
+            <label for="Principle">Principle Amount (₹):</label>
+            <input type="number" id="Principle" name="Principle">
+    
+            <label for="interest">Annual Interest Rate (%):</label>
+            <input type="number" id="interest" name="interest">
+
+            <label for="time">Number of Years:</label>
+            <input type="number" id="time" name="time">
+    
+            <div class="output">
+                0.0
+            </div>
+    
+            <button id="show">Show</button>
+        </div>
+    </div>
+    <footer>
+        © 2024 Zerodha Clone. All Rights Reserved.
+    </footer>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
